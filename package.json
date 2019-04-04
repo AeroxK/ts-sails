@@ -1,0 +1,42 @@
+{
+  "name": "chess",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "async": "2.0.1",
+    "connect-redis": "3.2.0",
+    "grunt": "1.0.1",
+    "lodash": "3.10.1",
+    "sails": "^1.0.0-46",
+    "sails-hook-grunt": "^3.0.2",
+    "sails-hook-orm": "^2.0.0-16",
+    "sails-hook-sockets": "^1.4.0",
+    "socket.io-redis": "5.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "eslint": "4.11.0",
+    "jest": "^24.7.1",
+    "ts-jest": "^24.0.1",
+    "typescript": "^3.4.1"
+  },
+  "scripts": {
+    "compile": "npm t && echo '### Initiating compiler...' && echo && tsc && echo '### All source files compiled' && echo",
+    "start": "NODE_ENV=production node app.js",
+    "test": "jest",
+    "lint": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your code looks good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/alkoenig/chess.git"
+  },
+  "author": "alkoenig",
+  "license": "",
+  "engines": {
+    "node": "8"
+  }
+}
